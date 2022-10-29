@@ -7,8 +7,6 @@
     &_title {
         font-weight: bold;
         font-size: 1.7rem;
-
-        margin-top: 10px;
     }
 }
 
@@ -30,10 +28,10 @@
 
 .picture img:hover {
     transition: all .3s;
-    scale: 1.02;
+    box-shadow: 0 0 7px #254b45;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 590px) {
     .portfolio {
         padding: 20px;
     }

@@ -56,7 +56,7 @@ new Swiper('.image-slider', {
       320: {
         slidesPerView: 1,
       },
-      668: {
+      767: {
         slidesPerView: 2,
       },
       992: {

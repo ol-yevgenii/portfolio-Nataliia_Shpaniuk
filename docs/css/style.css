@@ -248,6 +248,9 @@ main {
 }
 
 .introduce {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   font-size: 2rem;
   font-weight: bold;
@@ -326,7 +329,6 @@ main {
 .portfolio_title {
   font-weight: bold;
   font-size: 1.7rem;
-  margin-top: 10px;
 }
 
 .label {
@@ -348,12 +350,12 @@ main {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  scale: 1.02;
+  -webkit-box-shadow: 0 0 7px #254b45;
+          box-shadow: 0 0 7px #254b45;
 }
 
 .image-slider {
   padding: 30px 0 70px 0;
-  margin-top: 20px;
 }
 
 .image-slider__image {
@@ -1473,6 +1475,16 @@ h5 {
   }
 }
 
+@media (min-width: 590px) {
+  .portfolio {
+    padding: 20px;
+  }
+
+  .label {
+    padding: 0;
+  }
+}
+
 @media (min-width: 767px) {
   .menu_icon {
     display: none;
@@ -1520,14 +1532,6 @@ h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-
-  .portfolio {
-    padding: 20px;
-  }
-
-  .label {
-    padding: 0;
   }
 
   .contacts_nav {
