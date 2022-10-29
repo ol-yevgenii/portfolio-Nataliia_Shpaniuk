@@ -344,6 +344,13 @@ main {
   font-size: 1rem;
 }
 
+.picture img:hover {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  scale: 1.02;
+}
+
 .image-slider {
   padding: 30px 0 70px 0;
   margin-top: 20px;

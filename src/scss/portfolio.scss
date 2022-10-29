@@ -28,6 +28,11 @@
     font-size: 1rem;
 }
 
+.picture img:hover {
+    transition: all .3s;
+    scale: 1.02;
+}
+
 @media (min-width: 767px) {
     .portfolio {
         padding: 20px;
