@@ -328,13 +328,13 @@ main {
 
 .portfolio_title {
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .label {
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
   font-size: 1.1rem;
 }
 
@@ -356,6 +356,7 @@ main {
 
 .image-slider {
   padding: 30px 0 70px 0;
+  margin-top: 20px;
 }
 
 .image-slider__image {
