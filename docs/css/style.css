@@ -69,6 +69,10 @@ a {
   color: #254b45;
 }
 
+li {
+  list-style: none;
+}
+
 .wrapper {
   min-height: 100%;
   display: -ms-grid;
@@ -1361,6 +1365,11 @@ footer {
           align-items: center;
   color: rgb(234, 254, 247);
   margin: 10px 0;
+}
+
+.contacts_icon {
+  width: 25px;
+  height: 25px;
 }
 
 .contacts_icon-phone {

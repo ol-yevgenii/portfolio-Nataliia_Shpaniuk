@@ -12,11 +12,12 @@ burger.burger();
 
 // const swiper = new Swiper();
 
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Lazy, Navigation, Pagination } from 'swiper';
 
 new Swiper('.image-slider', {
 
-    modules: [Navigation, Pagination],
+    modules: [Navigation, Pagination, 
+      Lazy ],
 
     navigation: {
       nextEl: '.swiper-button-next',
@@ -64,17 +65,17 @@ new Swiper('.image-slider', {
       }
     },
   
-    // preloadImages: false,
+    preloadImages: false,
+      
+    lazy: {
+      loadOnTransitionStart: true,
   
-    // lazy: {
-    //   loadOnTransitionStart: false,
+      loadPrevNext: true,
+    },
   
-    //   loadPrevNext: true,
-    // },
+    watchSlidesProgress: true,
   
-    // watchSlidesProgress: true,
-  
-    // watchSlidesVisibility: true,
+    watchSlidesVisibility: true,
   
   });
 
