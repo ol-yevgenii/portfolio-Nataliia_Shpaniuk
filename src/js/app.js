@@ -16,8 +16,7 @@ import Swiper, { Lazy, Navigation, Pagination } from 'swiper';
 
 new Swiper('.image-slider', {
 
-    modules: [Navigation, Pagination, 
-      Lazy ],
+    modules: [Navigation, Pagination, Lazy ],
 
     navigation: {
       nextEl: '.swiper-button-next',
@@ -70,7 +69,7 @@ new Swiper('.image-slider', {
     lazy: {
       loadOnTransitionStart: true,
   
-      loadPrevNext: true,
+      loadPrevNext: false,
     },
   
     watchSlidesProgress: true,
