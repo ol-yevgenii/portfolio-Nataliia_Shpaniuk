@@ -37,6 +37,23 @@
         font-size: 1rem;
         font-weight: normal;
     }
+
+    &_resume {
+        margin-top: 20px;
+
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+        border-bottom: 3px solid transparent;   
+        transition: all .3s ease 0s;
+    }
+
+    &_resume:hover {
+        border-bottom: 3px solid #254b45;
+    }
+
+
 }
 
 @media (min-width: 450px) {
