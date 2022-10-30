@@ -69,9 +69,9 @@ new Swiper('.image-slider', {
     preloadImages: false,
       
     lazy: {
-      loadOnTransitionStart: true,
+      loadOnTransitionStart: false,
   
-      loadPrevNext: false,
+      loadPrevNext: true,
     },
   
     watchSlidesProgress: true,
