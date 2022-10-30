@@ -11,7 +11,6 @@ export function hoverEffect() {
         sliderImgWrapper.forEach(img => {
             img.addEventListener('mouseover', (e) => {
                 let target = e.target;
-                console.log(target);
 
                 target.parentNode.appendChild(sliderTextWrapper);
                 sliderTextWrapper.appendChild(sliderText);
@@ -21,7 +20,6 @@ export function hoverEffect() {
 
             img.addEventListener('mouseout', (e) => {
                 let target = e.target;
-                console.log(target);
 
                 target.parentNode.removeChild(sliderTextWrapper);
 
