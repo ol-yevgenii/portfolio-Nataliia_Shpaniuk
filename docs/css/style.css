@@ -379,6 +379,10 @@ main {
   transition: all 0.5s;
 }
 
+iframe {
+  border: none;
+}
+
 .image-slider {
   padding: 30px 0 70px 0;
   margin-top: 20px;

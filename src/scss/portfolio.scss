@@ -55,6 +55,10 @@
     transition: all .5s;
 }
 
+iframe {
+    border: none;
+}
+
 @media (min-width: 590px) {
     .portfolio {
         padding: 20px;
