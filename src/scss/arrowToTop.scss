@@ -18,6 +18,7 @@ $color: rgba(135, 80, 150, 1);
     border-radius: 50%;
 
     transition: all .3s;
+    opacity: 0;
     overflow: hidden;
 
     &:hover {
@@ -38,8 +39,8 @@ $color: rgba(135, 80, 150, 1);
     animation: 3.5s linear 1s infinite arrowMove;
 }
 
-.hide {
-    opacity: 0;
+.show {
+    opacity: 1;
 }
 
 @media (min-width: 767px) {

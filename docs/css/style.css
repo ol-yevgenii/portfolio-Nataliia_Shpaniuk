@@ -1368,6 +1368,7 @@ button.swiper-pagination-bullet {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  opacity: 0;
   overflow: hidden;
 }
 
@@ -1390,8 +1391,8 @@ button.swiper-pagination-bullet {
           animation: 3.5s linear 1s infinite arrowMove;
 }
 
-.hide {
-  opacity: 0;
+.show {
+  opacity: 1;
 }
 
 @-webkit-keyframes arrowMove {

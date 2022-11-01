@@ -5,7 +5,7 @@ export function toTopArrow() {
     arrowToTop.addEventListener('click', scrollToTop);
 
     function showArrowsToTop() {
-        arrowToTop.classList.toggle('hide', window.scrollY < 400)
+        arrowToTop.classList.toggle('show', window.scrollY > 400)
     }
 
     function scrollToTop(e) {
