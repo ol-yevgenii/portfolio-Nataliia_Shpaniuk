@@ -53,6 +53,7 @@
     background: linear-gradient(to bottom, rgba(37, 75, 69, 1) 55%, rgba(135, 80, 150, 1));
 
     transition: all .5s;
+    overflow: hidden;
 }
 
 @media (min-width: 590px) {

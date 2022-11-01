@@ -3,16 +3,14 @@ import * as typed from './modules/typedText.js';
 import * as scroll from './modules/scrollToSection.js';
 import * as burger from './modules/burger.js';
 import * as hover from './modules/hover.js';
+import * as toTop from './modules/scrollToTop.js';
 
 myFunction.isWebp();
 typed.typedText();
 scroll.sctollToSection();
 burger.burger();
 hover.hoverEffect();
-
-// import Swiper, { Navigation, Pagination } from 'swiper';
-
-// const swiper = new Swiper();
+toTop.toTopArrow();
 
 import Swiper, { Lazy, Navigation, Pagination } from 'swiper';
 

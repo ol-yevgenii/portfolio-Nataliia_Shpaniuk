@@ -377,6 +377,7 @@ main {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  overflow: hidden;
 }
 
 .image-slider {
@@ -1342,6 +1343,119 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.arrowToTop {
+  position: fixed;
+  right: 4%;
+  bottom: 21%;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 33px;
+  height: 33px;
+  border: 3px solid rgb(135, 80, 150);
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.arrowToTop:hover {
+  -webkit-animation: 1.5s linear 1s infinite arrowHover;
+          animation: 1.5s linear 1s infinite arrowHover;
+}
+
+.arrowTop {
+  margin-top: 1px;
+  border: solid rgb(135, 80, 150);
+  border-width: 0 3px 3px 0;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 5px;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-animation: 3.5s linear 1s infinite arrowMove;
+          animation: 3.5s linear 1s infinite arrowMove;
+}
+
+.hide {
+  opacity: 0;
+}
+
+@-webkit-keyframes arrowMove {
+  0% {
+    -webkit-transform: translateY(30px) rotate(-135deg);
+            transform: translateY(30px) rotate(-135deg);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(-20px) rotate(-135deg);
+            transform: translateY(-20px) rotate(-135deg);
+    opacity: 0;
+  }
+}
+
+@keyframes arrowMove {
+  0% {
+    -webkit-transform: translateY(30px) rotate(-135deg);
+            transform: translateY(30px) rotate(-135deg);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(-20px) rotate(-135deg);
+            transform: translateY(-20px) rotate(-135deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrowHover {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes arrowHover {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1558,6 +1672,15 @@ h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .arrowToTop {
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrowTop {
+    padding: 6px;
   }
 
   .contacts_nav {
