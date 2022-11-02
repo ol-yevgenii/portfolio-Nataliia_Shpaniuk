@@ -28,6 +28,14 @@ footer {
         & > .footer_nav {
             color: $footer-textColor;
         }
+
+        & a {
+            border-bottom: 3px solid transparent;
+
+            &:hover {
+                border-bottom: 3px solid $footer-textColor;
+            }
+        }
     }
 
     &_item {
@@ -62,6 +70,11 @@ footer {
         color: $footer-textColor;
 
         margin: 10px 0;
+
+        &:hover {
+            color: rgb(214, 251, 238);
+            scale: 1.1;
+        }
     }
 
     &_icon {
