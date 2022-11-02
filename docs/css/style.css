@@ -316,7 +316,7 @@ main {
 
 .about_greetings {
   height: 170px;
-  font-weight: bold;
+  font-size: 2rem;
 }
 
 .about_text {
@@ -1400,7 +1400,6 @@ button.swiper-pagination-bullet {
 }
 
 .arrowTop {
-  margin-top: 1px;
   border: solid rgb(135, 80, 150);
   border-width: 0 3px 3px 0;
   border-radius: 3px;

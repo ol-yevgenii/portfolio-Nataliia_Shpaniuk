@@ -7,7 +7,7 @@ export function typedText() {
         autoTyped.classList.add('auto_typed-ua');
 
         var typed = new Typed('.auto_typed', {
-            strings: ['Наталія Шпанюк', 'PR Менеджер'],
+            strings: ['Наталія Шпанюк', 'PR-менеджер'],
             typeSpeed: 160,
             backSpeed: 160,
             loop: true
@@ -15,7 +15,7 @@ export function typedText() {
     } else {
         autoTyped.classList.add('auto_typed-en');
         var typed = new Typed('.auto_typed', {
-            strings: ['Nataliia Shpaniuk', 'PR Manager'],
+            strings: ['Nataliia Shpaniuk', 'PR-manager'],
             typeSpeed: 160,
             backSpeed: 160,
             loop: true
