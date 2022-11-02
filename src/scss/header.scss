@@ -10,6 +10,24 @@ header {
     padding: 0 20px;
 }
 
+.lang_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.lang_select {
+    outline: none;
+    border: none;
+
+    background: transparent;
+    font-weight: bold;
+    color: #254b45;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .menu {
     display: flex;
     justify-content: flex-end;
@@ -106,6 +124,11 @@ header {
 }
 
 @media (min-width: 767px) {
+
+    .lang_wrapper {
+        padding-left: 20px;
+    }
+
     .menu_icon {
         display: none;
     }

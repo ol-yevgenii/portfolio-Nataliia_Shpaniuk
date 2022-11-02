@@ -4,6 +4,7 @@ import * as scroll from './modules/scrollToSection.js';
 import * as burger from './modules/burger.js';
 import * as hover from './modules/hover.js';
 import * as toTop from './modules/scrollToTop.js';
+import * as lang from './modules/siteLang.js';
 
 myFunction.isWebp();
 typed.typedText();
@@ -11,6 +12,7 @@ scroll.sctollToSection();
 burger.burger();
 hover.hoverEffect();
 toTop.toTopArrow();
+lang.siteLang();
 
 import Swiper, { Lazy, Navigation, Pagination } from 'swiper';
 

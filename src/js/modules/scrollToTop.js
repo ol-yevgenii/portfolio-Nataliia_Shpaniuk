@@ -10,9 +10,9 @@ export function toTopArrow() {
 
     function scrollToTop(e) {
         e.preventDefault();
-        const arrowLink = e.target;
+        // const arrowLink = e.target;
 
-        if (arrowLink === arrowToTop || arrowLink.classList.contains('arrowTop')) {
+        if (this === arrowToTop || arrowLink.classList.contains('arrowTop')) {
             window.scrollTo({
                     top: (0,0),
                     behavior: 'smooth'

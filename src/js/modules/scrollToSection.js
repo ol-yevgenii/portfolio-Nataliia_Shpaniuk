@@ -10,9 +10,8 @@ export function sctollToSection() {
 
         function onMenuLinkClick(e) {
             e.preventDefault();
-            const menuLink = e.target;
-            if (menuLink.dataset.scroll && document.querySelector(menuLink.dataset.scroll)) {
-                const scrollBlock = document.querySelector(menuLink.dataset.scroll);
+            if (this.dataset.scroll && document.querySelector(this.dataset.scroll)) {
+                const scrollBlock = document.querySelector(this.dataset.scroll);
                 const scrollToBlockValue = scrollBlock.getBoundingClientRect().top + scrollY - document.querySelector('.header').offsetHeight;
 
                 if (menuClose.classList.contains('active')) {
