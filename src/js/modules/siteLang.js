@@ -20,7 +20,7 @@ export function siteLang() {
             "en": "Contacts"
         },
         "greetings": {
-            "ua": "Привіт, Я",
+            "ua": "Привіт, я",
             "en": "Hello, I'm"
         },
         "about_text": {
