@@ -70,14 +70,14 @@ $color: rgba(135, 80, 150, 1);
 
 @keyframes arrowHover {
     0% {
-        scale: 1;
+        scale: 100%;
     }
 
     50% {
-        scale: 1.2;
+        scale: 130%;
     }
 
     100% {
-        scale: 1;
+        scale: 100%;
     }
 }

@@ -1452,29 +1452,29 @@ button.swiper-pagination-bullet {
 
 @-webkit-keyframes arrowHover {
   0% {
-    scale: 1;
+    scale: 100%;
   }
 
   50% {
-    scale: 1.2;
+    scale: 130%;
   }
 
   100% {
-    scale: 1;
+    scale: 100%;
   }
 }
 
 @keyframes arrowHover {
   0% {
-    scale: 1;
+    scale: 100%;
   }
 
   50% {
-    scale: 1.2;
+    scale: 130%;
   }
 
   100% {
-    scale: 1;
+    scale: 100%;
   }
 }
 
