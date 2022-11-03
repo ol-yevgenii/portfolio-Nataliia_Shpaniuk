@@ -92,7 +92,6 @@ export function siteLang() {
         localStorage.setItem('langLocal', hash);
         for (let key in langArr) {
             document.querySelector('.lng-' + key).innerHTML = langArr[key][hash];
-            console.log(langArr[key][hash]);
         }
     }
 
