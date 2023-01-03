@@ -12,7 +12,7 @@ export function sctollToSection() {
             e.preventDefault();
             if (this.dataset.scroll && document.querySelector(this.dataset.scroll)) {
                 const scrollBlock = document.querySelector(this.dataset.scroll);
-                const scrollToBlockValue = scrollBlock.getBoundingClientRect().top + scrollY - document.querySelector('.header').offsetHeight;
+                const scrollToBlockValue = scrollBlock.getBoundingClientRect().top + scrollY - document.querySelector('.header').offsetHeight + 70;
 
                 if (menuClose.classList.contains('active')) {
                     burgerClose.classList.remove('active');
