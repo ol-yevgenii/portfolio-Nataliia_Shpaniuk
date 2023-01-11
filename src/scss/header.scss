@@ -1,5 +1,6 @@
 header {
     width: 100%;
+    animation: 1s linear headerMove;
 }
 
 .header_wrapper {
@@ -21,7 +22,7 @@ header {
 
     background: transparent;
     font-weight: bold;
-    color: #254b45;
+    color: #bee0d6;
 
     &:hover {
         cursor: pointer;
@@ -52,7 +53,7 @@ header {
         width: 100%;
         height: 10%;
         transition: all .3s ease 0s;
-        background-color: #254b45;
+        background-color: #bee0d6;
     }
 
     &::before,
@@ -91,14 +92,12 @@ header {
 .nav {
     position: fixed;
     top: 0;
-    left: 100%;
     z-index: 10;
     
     width: 100%;
     height: 100%; 
-    background: rgba(0, 0, 0, 0.893);
+    background: rgba(34, 34, 34, 0.93);
     padding: 100px 30px 30px 30px;
-    transition: left 0.3s ease 0s;
     overflow: hidden;
 
     &_items {
@@ -116,11 +115,31 @@ header {
 
     &_item {
         list-style: none;
+        overflow: hidden;
     }
 }
 
 .active {
     left: 0;
+}
+
+.active-off {
+    left: 100%;
+    transition: 0.8s ease-in 0.3s;
+}
+
+.active-on {
+    left: 0;
+    transition: .8s ease-out 0s;
+}
+
+.nav_animation-on {
+    animation: 1.6s ease-out navMoveOn;
+}
+
+.nav_animation-off {
+    animation: 0.8s ease-in navMoveOff;
+    opacity: 0;
 }
 
 @media (min-width: 767px) {
@@ -156,7 +175,7 @@ header {
         }
 
         &_item:hover {
-            border-bottom: 3px solid #254b45;
+            border-bottom: 3px solid #bee0d6;
         }
     }
 
@@ -168,4 +187,48 @@ header {
         display: flex;
     }
 
+    .nav_animation-off {
+        opacity: 1;
+    }
+
+}
+
+@keyframes headerMove {
+    0% {
+        transform: translateY(-25vh);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes navMoveOn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes navMoveOff {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
 }

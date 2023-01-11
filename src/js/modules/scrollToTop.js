@@ -1,11 +1,12 @@
 export function toTopArrow() {
+    const introduceHight = document.querySelector('.introduce').offsetHeight;
     const arrowToTop = document.querySelector('.arrowToTop[data-toTop]');
 
     window.addEventListener('scroll', showArrowsToTop);
     arrowToTop.addEventListener('click', scrollToTop);
 
     function showArrowsToTop() {
-        arrowToTop.classList.toggle('show', window.scrollY > 400)
+        arrowToTop.classList.toggle('show', window.scrollY > introduceHight / 2);
     }
 
     function scrollToTop(e) {

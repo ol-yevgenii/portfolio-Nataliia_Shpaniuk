@@ -1,13 +1,16 @@
-.introduce {
-    align-items: center;
-    width: 100%;
+$color: rgb(135, 80, 150);
 
-    font-size: 2rem;
+.introduce {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+
     font-weight: bold;
 }
 
 .auto_typed {
-    color: rgb(135, 80, 150);
+    font-size: 3rem;
+    color: $color;
 }
 
 .photo {
@@ -26,59 +29,126 @@
     
     width: 100%;
     height: 100%;
+
+    animation: 1.5s linear introducePhotoMove;
 }
 
 .about {
     width: 100%;
-    padding: 20px;
+    height: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 
+    animation: 1.2s linear introduceAboutTextMove;
+
     &_greetings {
-        height: 170px;
-        font-size: 2rem;
+        height: 200px;
+        padding: 30px 0;
     }
 
     &_text {
-        margin-top: 20px;
-        font-size: 1rem;
         font-weight: normal;
     }
 
     &_resume {
-        margin-top: 20px;
+        padding: 30px 0;
 
         text-transform: uppercase;
         font-weight: bold;
         font-size: 1.2rem;
 
-        border-bottom: 3px solid transparent;   
-        transition: all .3s ease 0s;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 65%;
+            left: 0;
+    
+            width: 95%;
+            opacity: 0;
+
+            border: 2px solid $color;
+            transition: all .3s ease-in-out;
+        }
+
+        &:hover {
+
+            &::after {
+                content: "";
+                opacity: 1;
+            }
+        }
     }
 
-    &_resume:hover {
-        border-bottom: 3px solid #254b45;
+    .lng-resume {
+        color: $color;
     }
-
 }
 
-@media (min-width: 450px) {
+@media (min-width: 430px) {
     .about_greetings {
         height: auto;
     }
 }
 
-@media (min-width: 767px) and (max-width: 856px) {
+@media (min-width: 767px) and (max-width: 830px) {
     .about_greetings {
-        height: 170px;
+        height: 200px;
+        padding: 10px 0 20px 0;
     }
 }
 
 @media (min-width: 767px) {
     .introduce {
         height: calc(100vh - 70px);
+        padding: 0 20px;
+    }
+
+    .about_greetings {
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .auto_typed {
+        font-size: 3em;
+    }
+}
+
+@keyframes introducePhotoMove {
+    0% {
+        transform: translateX(-50vw);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes introduceAboutTextMove {
+    0% {
+        transform: translateX(50vw);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
